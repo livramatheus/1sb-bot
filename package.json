@@ -1,0 +1,23 @@
+{
+  "name": "1sb-bot",
+  "version": "1.0.0",
+  "description": "1SB's Discord Bot",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/livramatheus/1sb-bot.git"
+  },
+  "author": "Matheus do Livramento",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/livramatheus/1sb-bot/issues"
+  },
+  "homepage": "https://github.com/livramatheus/1sb-bot#readme",
+  "dependencies": {
+    "discord.js": "^14.12.1",
+    "dotenv": "^16.3.1"
+  }
+}
