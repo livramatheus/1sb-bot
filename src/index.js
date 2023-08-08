@@ -14,6 +14,12 @@ const client = new Client({
   ]
 })
 
+client.on('ready', (event) => {
+  console.log('Bot Online');
+  console.log(process.env.BOT_TOKEN);
+  console.log(process.env.APEX_TOKEN);
+});
+
 client.on('messageCreate', async (message) => {
   if (message.author.bot) return
 
