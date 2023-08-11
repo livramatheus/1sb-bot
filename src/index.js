@@ -15,16 +15,14 @@ const client = new Client({
 })
 
 client.on('ready', (event) => {
-  console.log('Bot Online');
-  console.log(process.env.BOT_TOKEN);
-  console.log(process.env.APEX_TOKEN);
+  console.log('🥇 Bot Online');
 });
 
 client.on('messageCreate', async (message) => {
   if (message.author.bot) return
 
-  await Ruan(message);
-  await Map(message);
+  await Ruan(message)
+  await Map(message)
 })
 
 client.login(process.env.BOT_TOKEN)
