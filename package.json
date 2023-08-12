@@ -26,6 +26,8 @@
     "node-fetch": "^3.3.2"
   },
   "devDependencies": {
+    "@rocketseat/eslint-config": "^2.1.0",
+    "eslint": "^8.47.0",
     "nodemon": "^3.0.1"
   }
 }
