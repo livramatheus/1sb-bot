@@ -3,20 +3,20 @@ import { Client, IntentsBitField } from 'discord.js'
 import { Map } from './endpoints/Map.js'
 import { Ruan } from './endpoints/Ruan.js'
 
-dotenv.config();
+dotenv.config()
 
 const client = new Client({
   intents: [
     IntentsBitField.Flags.Guilds,
     IntentsBitField.Flags.GuildMembers,
     IntentsBitField.Flags.GuildMessages,
-    IntentsBitField.Flags.MessageContent
-  ]
+    IntentsBitField.Flags.MessageContent,
+  ],
 })
 
-client.on('ready', (event) => {
-  console.log('🥇 Bot Online');
-});
+client.on('ready', () => {
+  console.log('🥇 Bot Online')
+})
 
 client.on('messageCreate', async (message) => {
   if (message.author.bot) return

@@ -19,9 +19,12 @@ export function Ruan(message) {
       'Polentão',
       'Arnaldo dedo sujo (ADS)',
       'Supremo senhor líder do squad',
-      'Barroso ou Ministro do STF'
+      'Barroso ou Ministro do STF',
     ]
 
-    return message.reply('Ruan? Você quis dizer ' + alias[parseInt(Math.random() * (alias.length + 1))])
+    return message.reply(
+      'Ruan? Você quis dizer ' +
+        alias[parseInt(Math.random() * (alias.length + 1))],
+    )
   }
 }
