@@ -2,6 +2,7 @@ import dotenv from 'dotenv'
 import { Client, IntentsBitField } from 'discord.js'
 import { Map } from './endpoints/Map.js'
 import { Ruan } from './endpoints/Ruan.js'
+import { Crafting } from './endpoints/Crafting.js'
 
 dotenv.config()
 
@@ -23,6 +24,7 @@ client.on('messageCreate', async (message) => {
 
   await Ruan(message)
   await Map(message)
+  await Crafting(message)
 })
 
 client.login(process.env.BOT_TOKEN)
